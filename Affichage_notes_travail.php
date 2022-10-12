@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Affichage travail</title>
 </head>
 <body>
     <nav role="menu">
@@ -16,7 +16,7 @@
 
     <div class="conteneur">
     <h1>Affichage des notes par travail </h1>
-    <form name="selecteur" method="GET">
+    <form class="form_page_1"  name="selecteur" method="GET">
             <select name="numero_groupe">
                 <option >Groupe 1</option>
                 <option >Groupe 2</option>

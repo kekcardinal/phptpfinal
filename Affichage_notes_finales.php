@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Affichage note</title>
 </head>
 <body>
     
@@ -16,18 +16,18 @@
     </nav>
 
     <div class="conteneur">
-
-    <form name="selecteur" method="GET">
+    <h1>Affichage des notes finales </h1>
+    <form class="form_page_2" name="selecteur" method="GET">
             <select  name="numero_groupe[]" multiple size=2>
                 <option value="G1">Groupe 1</option>
                 <option value="G2">Groupe 2</option>
             </select>
-            <input type="checkbox" name="chkbox_echec" value="echec"> En échec</label><br>
-            <input type="radio" name="hommefemme" value="H">
+            <input class="radio" type="checkbox" name="chkbox_echec" value="echec"> En échec</label><br>
+            <input class="radio" type="radio" name="hommefemme" value="H">
             <label>Homme</label><br>
-            <input type="radio" name="hommefemme" value="F">
+            <input class="radio" type="radio" name="hommefemme" value="F">
             <label>Femme</label><br>
-            <input type="radio" name="hommefemme" value="HF">
+            <input class="radio" type="radio" name="hommefemme" value="HF">
             <label>Homme et femme</label><br>
             <input type="submit" name="Afficher" value="Calculer">
         </form>
@@ -69,7 +69,7 @@
         }
         else
         {
-            echo "Veuillez remplir le formulaire";
+            echo "<h1>Veuillez remplir le formulaire</h1>";
         }
        
         

@@ -5,6 +5,68 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+table {
+    height: 50vh;
+    width: 75%;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 3px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: skyblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* PARAMÈTRES DE MISE EN PAGE DU FORM */
+.form_page_1 input,
+select {
+    background-color: #f9f7f7;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #112D4E;
+    margin: 10px auto;
+    padding-left: 10px;
+    text-align-last: center;
+}
+
+.form_page_2 select,
+input:not(.radio) {
+    background-color: #f9f7f7;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #112D4E;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+tr:hover {
+    background-color: #2b6adf;
+}
+
+th,
+td {
+    /* padding: 10px; */
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 3px;
+}
+
 .conteneur {
     margin-left: 200px;
     padding: 50px;

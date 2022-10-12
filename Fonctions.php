@@ -1,7 +1,7 @@
 <?php
 function afficher_groupe($groupe, $indice_travail)
 {
-    $chaine ="<table border=1><tr><th>Prenom</th><th>Nom</th><th>Note</th></tr>";
+    $chaine ="<table><tr><th>Prenom</th><th>Nom</th><th>Note</th></tr>";
     $tableau_notes = array("");
     foreach($groupe as $numero_etudiant => $tableau_etudiant)
     {
@@ -14,7 +14,7 @@ function afficher_groupe($groupe, $indice_travail)
 
 function afficher_valeur_finales($groupe, $echec, $sexe)
 {   
-    $chaine = "<table><tr><th>Prenom</th><th>Nom</th><th>Sexe</th><th>Note finale</th><th>Est en echec</th></tr>";
+    $chaine = "<table class='tableau'><tr><th>Prenom</th><th>Nom</th><th>Sexe</th><th>Note finale</th><th>Est en echec</th></tr>";
     $tableau_moyenne = array("");
 
     foreach($groupe as $etudiant => $tableau_etudiant)
@@ -86,11 +86,14 @@ function afficher_valeur_finales($groupe, $echec, $sexe)
 }
 function ecrire_ligne($tableau_etudiant)
 {  
-    return "<tr><th>".$tableau_etudiant[0]."</th><th>".$tableau_etudiant[1]."</th><th>".$tableau_etudiant[2]."</th><th>".calcul_note_finale($tableau_etudiant)."</th><th>".est_en_echec($tableau_etudiant)."</tr>";
+    return "<tr><td>".$tableau_etudiant[0]."</td><td>".$tableau_etudiant[1]."</td><td>".$tableau_etudiant[2]."</td><td>".calcul_note_finale($tableau_etudiant)."</td><td>".est_en_echec($tableau_etudiant)."</td></tr>";
 }
 function calcul_moyenne($tableau)
 {
+    if (!($tableau == array("")))
+    {
     return round(array_sum($tableau)/(count($tableau)-1),2);
+    }
 }
 function est_un_homme($etudiant)
 {
