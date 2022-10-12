@@ -3,6 +3,7 @@
 body {
     background: #dfebf4;
     font-family: 'DM Sans', sans-serif;
+    text-align:center;
 }
 
 table {
@@ -48,6 +49,7 @@ input:not(.radio) {
     border-color: #112D4E;
     margin: 10px auto;
     padding-left: 10px;
+    text-align-last: center;
 }
 
 h1 {
