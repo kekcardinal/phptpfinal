@@ -43,6 +43,11 @@
                     }
                     else
                     {
+                        foreach($tableau[$element_rechercher] as $index => $valeur)
+                        {
+                            var_dump($index);
+                            var_dump($valeur);
+                        }
                         echo "Code etudiant valide";
                     }
                     var_dump($tableau[$element_rechercher]);

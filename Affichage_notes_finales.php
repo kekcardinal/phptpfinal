@@ -23,11 +23,11 @@
                 <option value="G2">Groupe 2</option>
             </select>
             <input class="radio" type="checkbox" name="chkbox_echec" value="echec"> En échec</label><br>
-            <input class="radio" type="radio" name="hommefemme" value="H">
+            <input class="radio" type="radio" name="hommefemme" value="M">
             <label>Homme</label><br>
             <input class="radio" type="radio" name="hommefemme" value="F">
             <label>Femme</label><br>
-            <input class="radio" type="radio" name="hommefemme" value="HF">
+            <input class="radio" type="radio" name="hommefemme" value="MF">
             <label>Homme et femme</label><br>
             <input type="submit" name="Afficher" value="Calculer">
         </form>
